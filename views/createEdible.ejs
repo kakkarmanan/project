@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+<h1>Sign In</h1>
+<br>
+
+<form action="/createEdible" method="post">
+    <label for="name">name</label>
+    <input type="text" name="name" autocomplete="off">
+    <br><br>
+    <label for="type">Type</label>
+    <input type="text" name="type" autocomplete="off">
+    <br><br>
+    <label for="quantity">Quantity</label>
+    <input type="text" name="quantity" autocomplete="off">
+    <br><br>
+    <label for="price">Price</label>
+    <input type="text" name="price" autocomplete="off">
+    <br><br>
+    <!-- <label for="type">Upadted</label>
+    <input type="text" name="type" autocomplete="off">
+    <br><br> -->
+    <button type="submit" href="/createEdibles" role="button">CREATE</button>
+</form>
+
+<%- include('partials/footer') %>

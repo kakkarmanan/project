@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+<h1>Update Edible</h1>
+
+<form action="/updateEdible" method="post">
+    <label for="id">Id</label>
+    <input type="text" name="id" autocomplete="off">
+    <br><br>
+    <label for="quantity">Quantity</label>
+    <input type="number" name="quantity" autocomplete="off">
+    <br><br>
+    <button type="submit"  role="button">UPDATE</button>
+</form>
+
+<%- include('partials/footer') %>
+

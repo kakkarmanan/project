@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+<form action="/purchaseEdible" method="post">
+    <label for="id">Id</label>
+    <input type="text" name= "id" autocomplete="off">
+    <label for="quantity">Quantity</label>
+    <input type="number" name="quantity" autocomplete="off">
+    <button type="submit" role="button">SUBMIT</button>
+</form>
+
+<% amount.forEach(price => { %>
+ <p><%= price %> </p>
+ <br>
+<% }) %>
+
+<%- include('partials/footer') %>

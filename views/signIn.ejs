@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+<h1>Sign In</h1>
+<br>
+
+<form action="/signIn" method="post">
+    <label for="email">Email</label>
+    <input type="email" name="email" autocomplete="off">
+    <br><br>
+    <label for="password">Password</label>
+    <input type="password" name="password" autocomplete="off">
+    <br><br>
+    <button type="submit" href="" role="button">SIGN IN</button>
+</form>
+
+<a href="/signup">If New, sign up</a>
+<%- include('partials/footer') %>
